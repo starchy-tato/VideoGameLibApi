@@ -1,0 +1,40 @@
+﻿@VideoGameLibApi_HostAddress = https://localhost:7282
+
+
+POST {{VideoGameLibApi_HostAddress}}/videogames
+Content-Type: application/json
+
+{
+    "title": "Mass Effect",
+    "studio": "Bioware",
+    "releaseYear": 2007,
+    "genre": "action rpg",
+    "isComplete": true
+}
+
+###
+
+GET {{VideoGameLibApi_HostAddress}}/videogames
+
+###
+
+GET {{VideoGameLibApi_HostAddress}}/videogames/1
+
+###
+
+PUT {{VideoGameLibApi_HostAddress}}/videogames/1
+Content-Type: application/json
+
+{
+    "title": "Mass Effect 2",
+    "studio": "Bioware",
+    "releaseYear": 2011,
+    "genre": "action rpg",
+    "isComplete": false
+}
+
+###
+
+DELETE {{VideoGameLibApi_HostAddress}}/videogames/1
+
+###
